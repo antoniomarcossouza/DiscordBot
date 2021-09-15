@@ -1,0 +1,6 @@
+from decouple import config
+
+BOT_TOKEN = config("BOT_TOKEN")
+PREFIX = config("PREFIX")
+WELCOME_CHANNEL_ID = config("WELCOME_CHANNEL_ID")
+WELCOME_CHANNEL_ID = int(WELCOME_CHANNEL_ID)
