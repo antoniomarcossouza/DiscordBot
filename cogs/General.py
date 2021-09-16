@@ -14,7 +14,7 @@ class General(commands.Cog):
     @commands.command()
     @has_permissions(manage_messages=True)
     async def clear(self, ctx, amount: int):
-        await ctx.channel.purge(limit=amount + 1)
+        await ctx.channel.purge(limit=amount + 1)a
         await ctx.channel.send(f"{amount} mensagens apagadas!")
 
     @clear.error
