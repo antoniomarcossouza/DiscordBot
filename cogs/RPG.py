@@ -89,14 +89,14 @@ class RPG(commands.Cog):
             "**Alucinações.** O personagem tem alucinações, levando a desvantagem e testes de percepção.",
             "**Paranóico.** Ninguém é confiável, o personagem não usará magias que beneficiam outros personagens além de si mesmo.",
             "**Paranóico.** Ninguém é confiável, o personagem não usará magias que beneficiam outros personagens além de si mesmo.",
-            "**Paranóico.** Ninguém é confiável, o personagem não usará magias que beneficiam outros personagens além de si mesmo."
+            "**Paranóico.** Ninguém é confiável, o personagem não usará magias que beneficiam outros personagens além de si mesmo.",
             "Nada acontece.",
         ]
 
         result = random.randint(0, 19)
         embed = discord.Embed(
-            title="Crowley — Morte",
-            description=f"Voltar dos mortos é uma provação. O alvo sofre -4 de penalidade em todas as rolagens de Ataque, Testes de Resistência e Testes de Habilidade. Cada vez que o alvo termina um descanso longo, a penalidade é reduzida em 1 até que desapareça.\n{death_curse[result]}",
+            title="Crowley — Maldição de Ressureição",
+            description=f"Voltar dos mortos é uma provação. O alvo sofre -4 de penalidade em todas as rolagens de Ataque, Testes de Resistência e Testes de Habilidade. Cada vez que o alvo termina um descanso longo, a penalidade é reduzida em 1 até que desapareça.\n\n{death_curse[result]}",
             color=0x000000,
         )
         await ctx.send(embed=embed)
