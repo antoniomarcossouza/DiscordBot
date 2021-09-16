@@ -33,7 +33,7 @@ class Greetings(commands.Cog):
             await channel.send(f"{member.mention} foi banido do servidor! Adeus!")
             return
         except discord.NotFound:
-            await channel.send(f"{member.mention} saiu do servidor! Tchau!")
+            await channel.send(f"{member.mention} saiu do servidor! Tchau!")a
 
 
 def setup(client):
