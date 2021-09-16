@@ -28,7 +28,12 @@ class Greetings(commands.Cog):
     @commands.Cog.listener()
     async def on_member_remove(self, member):
         channel = self.client.get_channel(WELCOME_CHANNEL_ID)
-        await channel.send(f"{member} saiu do servidor! Tchau!")
+        try:
+            await member.guild.fetch_ban(member)
+            await channel.send(f"{member.mention} foi banido do servidor! Adeus!")
+            return
+        except discord.NotFound:
+            await channel.send(f"{member.mention} saiu do servidor! Tchau!")
 
 
 def setup(client):
