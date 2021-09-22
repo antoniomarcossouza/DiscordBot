@@ -2,6 +2,8 @@ import discord
 from discord.ext import commands
 import random
 
+from discord.ext.commands.core import command
+
 
 class RPG(commands.Cog):
     def __init__(self, client):
@@ -66,9 +68,13 @@ class RPG(commands.Cog):
         )
         await ctx.send(embed=embed)
 
+    @commands.group(invoke_without_command=True)
+    async def crowley(self, ctx):
+        pass
+
     # Crowley - Death Curse
-    @commands.command()
-    async def crowley_death(self, ctx):
+    @crowley.command()
+    async def death(self, ctx):
         death_curse = [
             "-6 do maior atributo",
             "-1d6 do maior atributo",
@@ -101,8 +107,8 @@ class RPG(commands.Cog):
         await ctx.send(embed=embed)
 
     # Crowley - Daily Curse
-    @commands.command()
-    async def crowley_daily(self, ctx):
+    @crowley.command()
+    async def daily(self, ctx):
         daily_curse = [
             "-6 do maior atributo",
             "-1d6 do maior atributo",
