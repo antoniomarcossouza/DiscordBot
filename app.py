@@ -20,7 +20,7 @@ async def on_ready():
             type=discord.ActivityType.listening, name="você ( ͡° ͜ʖ ͡°)"
         ),
     )
-    print("Bot rodando!")
+    print("[INFO]: Bot rodando!")
     print("————————————")
 
 
