@@ -17,7 +17,7 @@ What I intend to implement soon?
 
 - Finish help command
 - After tempban, bot PMs banned user with an invite to enter the server again
-- Mute users
+- Mute user messages
 - Leveling system
 
 ## Installing instructions
