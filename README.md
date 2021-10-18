@@ -12,6 +12,7 @@ As of now, what this bot does/offers?
   - Coinflips
   - D&D 5e Artificer 'Experimental Elixir' feature
   - A custom curse roll for a player character
+- Play local audio files
 
 What I intend to implement soon?
 
